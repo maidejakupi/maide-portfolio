@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maide Jakupi — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <span class="nav-logo">MJ</span>
+        <button class="nav-burger" id="navBurger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="#about"    class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills"   class="nav-link">Skills</a>
+            <a href="#journey"  class="nav-link">Journey</a>
+            <a href="#contact"  class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="about">
+        <div class="hero-tag">
+            <span class="hero-tag-dot"></span>
+            Available for internships
+        </div>
+        <h1 class="hero-name">Maide Jakupi</h1>
+        <div class="hero-role">
+            I'm a <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-bio">
+            Computer Science student at SEEU, building real things with code —
+            from web apps and games to databases and algorithms.
+            I care about clean design as much as clean code.
+        </p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn-primary">See my work</a>
+            <a href="https://github.com/maidejakupi" target="_blank" rel="noopener" class="btn-ghost">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <div class="section-inner">
+            <p class="section-eyebrow reveal">Work</p>
+            <h2 class="section-title reveal">Projects</h2>
+
+            <div class="projects-grid">
+
+                <!-- NumQuest — featured with thumbnail -->
+                <article class="project-card project-card--featured reveal">
+                    <div class="project-thumb">
+                        <div class="project-thumb-inner" id="numquestThumb">
+                            <canvas class="thumb-canvas" id="thumbCanvas"></canvas>
+                            <div class="thumb-overlay">
+                                <div class="thumb-logo">◈ NumQuest</div>
+                                <div class="thumb-sub">Number Guessing Game</div>
+                            </div>
+                        </div>
+                        <div class="thumb-shine"></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">Canvas API</span>
+                            <span class="project-tag">Game</span>
+                        </div>
+                        <h3 class="project-name">NumQuest</h3>
+                        <p class="project-desc">
+                            Browser-based number guessing game with three difficulty modes,
+                            a live proximity heat system that glows the card border as you get closer,
+                            animated canvas background, and localStorage best-score tracking.
+                            Zero dependencies — built from scratch.
+                        </p>
+                        <div class="project-footer">
+                            <a href="https://maidejakupi.github.io/guess-game-pro/" target="_blank" rel="noopener" class="project-btn project-btn--primary">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                                Live demo
+                            </a>
+                            <a href="https://github.com/maidejakupi/guess-game-pro" target="_blank" rel="noopener" class="project-btn project-btn--ghost">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                Source
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-thumb project-thumb--sm">
+                        <div class="project-thumb-inner project-thumb-inner--react">
+                            <div class="thumb-icon-wrap">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.5" fill="#61DAFB"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#61DAFB" stroke-width="1.2" fill="none"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#61DAFB" stroke-width="1.2" fill="none" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#61DAFB" stroke-width="1.2" fill="none" transform="rotate(120 12 12)"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Vite</span>
+                            <span class="project-tag">REST API</span>
+                        </div>
+                        <h3 class="project-name">Movie Reviews App</h3>
+                        <p class="project-desc">
+                            Full-stack React app with auth, protected routes,
+                            and full CRUD against a REST API.
+                            Uses React Router, AuthContext, and TailwindCSS.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-status">
+                                <span class="status-dot status-dot--amber"></span>
+                                In progress
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-thumb project-thumb--sm">
+                        <div class="project-thumb-inner project-thumb-inner--db">
+                            <div class="thumb-icon-wrap">
+                                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.4"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4.03 3-9 3S3 13.66 3 12"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">SQL Server</span>
+                            <span class="project-tag">T-SQL</span>
+                            <span class="project-tag">MS Access</span>
+                        </div>
+                        <h3 class="project-name">Car Service System</h3>
+                        <p class="project-desc">
+                            Relational DB for a car service center — schema design,
+                            stored procedures, ODBC integration,
+                            and an Access front-end with navigation forms.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-status">
+                                <span class="status-dot status-dot--teal"></span>
+                                University project
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+        <div class="section-inner">
+            <p class="section-eyebrow reveal">Stack</p>
+            <h2 class="section-title reveal">Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal" data-pct="88">
+                    <div class="skill-icon skill-icon--js">
+                        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="4" fill="#F7DF1E"/><path d="M9.5 24.5l2.1-1.3c.4.7.8 1.3 1.7 1.3.85 0 1.4-.33 1.4-1.6V15h2.6v7.97c0 2.6-1.52 3.8-3.74 3.8-2 0-3.17-1.04-3.76-2.27zm9.2-.3l2.1-1.28c.55.9 1.27 1.56 2.54 1.56 1.07 0 1.75-.53 1.75-1.27 0-.88-.7-1.2-1.88-1.7l-.65-.28c-1.87-.8-3.1-1.8-3.1-3.9 0-1.95 1.48-3.43 3.8-3.43 1.65 0 2.83.57 3.68 2.08l-2.02 1.3c-.44-.8-.92-1.1-1.66-1.1-.76 0-1.24.48-1.24 1.1 0 .77.48 1.08 1.6 1.56l.64.27c2.2.94 3.44 1.9 3.44 4.06 0 2.33-1.83 3.62-4.28 3.62-2.4 0-3.95-1.14-4.72-2.64z" fill="#000"/></svg>
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-pct">88%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:88%;--color:#F7DF1E"></div></div>
+                </div>
+
+                <div class="skill-card reveal" data-pct="85">
+                    <div class="skill-icon skill-icon--html">
+                        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="4" fill="#E44D26"/><path d="M7 4l1.8 20.3L16 27l7.2-2.7L25 4H7zm14.8 6H12l.3 3h9.1l-.9 9.7-4.5 1.3-4.5-1.3-.3-3.8h2.9l.2 2 1.7.5 1.7-.5.2-2.5H10.6l-.7-8h12.1l-.2 2.6z" fill="#fff"/></svg>
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">HTML5</span>
+                        <span class="skill-pct">85%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:85%;--color:#E44D26"></div></div>
+                </div>
+
+                <div class="skill-card reveal" data-pct="80">
+                    <div class="skill-icon skill-icon--css">
+                        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="4" fill="#1572B6"/><path d="M7 4l1.8 20.3L16 27l7.2-2.7L25 4H7zm13 14.3l-4 1.2-4-1.2-.3-3h2.8l.2 1.8 1.3.4 1.3-.4.2-2.1H10.6l-.7-7.3h12.2l-.2 2.5h-9l.2 2.3h8.6l-.7 5.8z" fill="#fff"/></svg>
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">CSS3</span>
+                        <span class="skill-pct">80%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:80%;--color:#1572B6"></div></div>
+                </div>
+
+                <div class="skill-card reveal" data-pct="75">
+                    <div class="skill-icon skill-icon--react">
+                        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="4" fill="#20232A"/><circle cx="16" cy="16" r="2.5" fill="#61DAFB"/><ellipse cx="16" cy="16" rx="9" ry="3.5" stroke="#61DAFB" stroke-width="1.2" fill="none"/><ellipse cx="16" cy="16" rx="9" ry="3.5" stroke="#61DAFB" stroke-width="1.2" fill="none" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="9" ry="3.5" stroke="#61DAFB" stroke-width="1.2" fill="none" transform="rotate(120 16 16)"/></svg>
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">React</span>
+                        <span class="skill-pct">75%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:75%;--color:#61DAFB"></div></div>
+                </div>
+
+                <div class="skill-card reveal" data-pct="70">
+                    <div class="skill-icon skill-icon--node">
+                        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="4" fill="#339933"/><path d="M16 5L5 11v10l11 6 11-6V11L16 5zm0 2.3l8.5 4.6-8.5 4.7-8.5-4.7L16 7.3zM7 13.3l8 4.4v8.7L7 22V13.3zm10 13.1v-8.7l8-4.4V22l-8 4.4z" fill="#fff"/></svg>
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-pct">70%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:70%;--color:#339933"></div></div>
+                </div>
+
+                <div class="skill-card reveal" data-pct="82">
+                    <div class="skill-icon skill-icon--git">
+                        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="4" fill="#F05032"/><path d="M27.5 14.5l-10-10a2 2 0 00-2.83 0l-2 2 2.54 2.54a2.38 2.38 0 013 3l2.45 2.45a2.38 2.38 0 11-1.42 1.42L17 13.66V20a2.38 2.38 0 11-2 0v-6.44L12.54 11.1A2.38 2.38 0 0110 8.67V8.2l-2.17 2.17a2 2 0 000 2.83l10 10a2 2 0 002.83 0l6.84-6.84a2 2 0 000-2.86z" fill="#fff"/></svg>
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Git</span>
+                        <span class="skill-pct">82%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:82%;--color:#F05032"></div></div>
+                </div>
+
+                <div class="skill-card reveal" data-pct="78">
+                    <div class="skill-icon skill-icon--github">
+                        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="4" fill="#24292E"/><path d="M16 4C9.37 4 4 9.37 4 16c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23a11.5 11.5 0 016 0c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57C24.565 25.795 28 21.31 28 16c0-6.63-5.37-12-12-12z" fill="#fff"/></svg>
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">GitHub</span>
+                        <span class="skill-pct">78%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:78%;--color:#a78bfa"></div></div>
+                </div>
+
+                <div class="skill-card reveal" data-pct="72">
+                    <div class="skill-icon skill-icon--sql">
+                        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="4" fill="#336791"/><ellipse cx="16" cy="10" rx="9" ry="3.5" fill="none" stroke="#fff" stroke-width="1.3"/><path d="M7 10v4c0 1.93 4.03 3.5 9 3.5s9-1.57 9-3.5v-4" fill="none" stroke="#fff" stroke-width="1.3"/><path d="M7 14v4c0 1.93 4.03 3.5 9 3.5s9-1.57 9-3.5v-4" fill="none" stroke="#fff" stroke-width="1.3"/></svg>
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-pct">72%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:72%;--color:#336791"></div></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="journey">
+        <div class="section-inner">
+            <p class="section-eyebrow reveal">History</p>
+            <h2 class="section-title reveal">My Journey</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3 class="timeline-title">Started CS at SEEU</h3>
+                        <p class="timeline-desc">Began studying Computer Science, diving into algorithms, data structures, and the fundamentals of software engineering.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3 class="timeline-title">Learned Git & GitHub</h3>
+                        <p class="timeline-desc">Mastered version control, branching strategies, and started publishing projects publicly on GitHub.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3 class="timeline-title">Built First CLI Game</h3>
+                        <p class="timeline-desc">Created a command-line number guessing game in Node.js — my first interactive program with real game logic and user input.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot timeline-dot--violet"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3 class="timeline-title">Launched NumQuest</h3>
+                        <p class="timeline-desc">Rebuilt the CLI game as a polished browser game — glassmorphism UI, animated canvas, proximity hints, and live deploy on GitHub Pages.</p>
+                        <a href="https://maidejakupi.github.io/guess-game-pro/" target="_blank" class="timeline-link">Play it →</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot timeline-dot--teal"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3 class="timeline-title">Built This Portfolio</h3>
+                        <p class="timeline-desc">Designed and coded a full personal portfolio from scratch — dark UI, animated canvas background, scroll reveals, and mobile-first layout.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+        <div class="section-inner contact-inner">
+            <p class="section-eyebrow reveal">Say hi</p>
+            <h2 class="section-title reveal">Let's connect</h2>
+            <p class="contact-sub reveal">
+                Open to internships, collaborations, or just a good conversation about code and design.
+            </p>
+            <div class="contact-grid">
+
+                <a href="https://github.com/maidejakupi" target="_blank" rel="noopener" class="contact-card reveal">
+                    <div class="contact-card-icon contact-card-icon--github">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </div>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">GitHub</span>
+                        <span class="contact-card-value">@maidejakupi</span>
+                    </div>
+                    <svg class="contact-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+
+                <a href="mailto:maide@example.com" class="contact-card reveal">
+                    <div class="contact-card-icon contact-card-icon--email">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>
+                    </div>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">Email</span>
+                        <span class="contact-card-value">Send me a message</span>
+                    </div>
+                    <svg class="contact-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+
+                <a href="https://linkedin.com/in/maidejakupi" target="_blank" rel="noopener" class="contact-card reveal">
+                    <div class="contact-card-icon contact-card-icon--linkedin">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">LinkedIn</span>
+                        <span class="contact-card-value">Maide Jakupi</span>
+                    </div>
+                    <svg class="contact-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span>Built by Maide Jakupi · 2026 · Vanilla HTML, CSS & JS</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
